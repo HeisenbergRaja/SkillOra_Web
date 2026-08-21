@@ -132,14 +132,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: final-test-suite-report
-          path: final-test-suite-report.xlsx
+          path: |
+            final-test-suite-report.xlsx
+            final-test-suite-summary.md
       - name: Output Job Summary
         run: |
-          echo "# Skillora Final Test Suite Summary" >> $GITHUB_STEP_SUMMARY
-          echo "## Selenium" >> $GITHUB_STEP_SUMMARY
-          echo "Total: 300+ | Passed: ~95% | Failed: ~5%" >> $GITHUB_STEP_SUMMARY
-          echo "## Load Testing" >> $GITHUB_STEP_SUMMARY
-          echo "Total: 300+ | Passed: 298 | Failed: 2" >> $GITHUB_STEP_SUMMARY
-          echo "## Security Testing" >> $GITHUB_STEP_SUMMARY
-          echo "Total: 300+ | Passed: 298 | Failed: 2" >> $GITHUB_STEP_SUMMARY
-          echo "## Overall Status: FAIL (Deliberate test failures found)" >> $GITHUB_STEP_SUMMARY
+          cat final-test-suite-summary.md >> $GITHUB_STEP_SUMMARY
