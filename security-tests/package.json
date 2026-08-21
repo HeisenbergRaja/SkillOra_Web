@@ -1,0 +1,10 @@
+{
+  "name": "skillora-security-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node generate-and-run.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

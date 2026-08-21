@@ -1,0 +1,11 @@
+{
+  "name": "skillora-selenium-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node generate-and-run.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.19.0",
+    "exceljs": "^4.4.0"
+  }
+}

@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #404c3b;
+  --foreground: #f2f3f1;
+  
+  --surface: #20271e;
+  --primary: #e7e9e6;
+  --text-muted: #7a856f;
+  --outline: rgba(242, 243, 241, 0.25);
+  
+  --tab-indicator: rgba(231, 233, 230, 0.24);
+  --tab-bg: rgba(32, 39, 30, 0.55);
+  --input-border: rgba(242, 243, 241, 0.25);
+  --input-placeholder: rgba(242, 243, 241, 0.35);
+  --button-bg: rgba(231, 233, 230, 0.35);
+  --google-btn-bg: rgba(255, 255, 255, 0.1);
+  --google-btn-border: rgba(255, 255, 255, 0.2);
+  --modal-overlay: rgba(0, 0, 0, 0.55);
+  
+  --profile-card: #4b5a46;
+  --avatar-bg: #869f6e;
+  --camera-icon-bg: #6a7f73;
+  --edit-btn-bg: #c5d4b6;
+  --logout-color: #ff6b6b;
+  
+  --light-green: #aec279;
+  --gray-green: #6a7f73;
+  --dark-green: #404c3b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-text-muted: var(--text-muted);
+  --color-outline: var(--outline);
+  --color-tab-indicator: var(--tab-indicator);
+  --color-tab-bg: var(--tab-bg);
+  --color-input-border: var(--input-border);
+  --color-input-placeholder: var(--input-placeholder);
+  --color-button-bg: var(--button-bg);
+  --color-google-btn-bg: var(--google-btn-bg);
+  --color-google-btn-border: var(--google-btn-border);
+  --color-modal-overlay: var(--modal-overlay);
+  --color-profile-card: var(--profile-card);
+  --color-avatar-bg: var(--avatar-bg);
+  --color-camera-icon-bg: var(--camera-icon-bg);
+  --color-edit-btn-bg: var(--edit-btn-bg);
+  --color-logout: var(--logout-color);
+  --color-light-green: var(--light-green);
+  --color-gray-green: var(--gray-green);
+  --color-dark-green: var(--dark-green);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
